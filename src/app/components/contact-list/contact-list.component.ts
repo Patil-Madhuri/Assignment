@@ -32,19 +32,21 @@ export class ContactListComponent implements OnInit {
     this.httpService.httpGet(contentBody).subscribe(response => {
       console.log(response);
       this.contactsList = response;
-      // this.slicedContactList = response.slice(0, 4);
+      this.slicedContactList = response.slice(0, 10);
       this.spinnerService.hide();
     })
   }
 
   onScrollDown() {
+    console.log("scroll");
+    
     if (this.slicedContactList.length === this.contactsList.length) {
       console.log("Nothing to do");
       return      
     }
     else if (this.slicedContactList.length <= this.contactsList.length) {
       let len = this.slicedContactList.length;
-      for (let i = len; i <= len + 5; i++) {
+      for (let i = len; i <= len + 3; i++) {
         this.slicedContactList.push(this.contactsList[i]);
       }
     }

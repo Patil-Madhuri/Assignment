@@ -13,7 +13,6 @@ export class ContactListComponent implements OnInit {
   searchForm: FormGroup;
   contactsList = [];
   slicedContactList = [];
-  scrollUpDistance = 2;
   scrollDistance = 1;
   scrollThrottle = 50;
 
@@ -33,7 +32,7 @@ export class ContactListComponent implements OnInit {
     this.httpService.httpGet(contentBody).subscribe(response => {
       console.log(response);
       this.contactsList = response;
-      this.slicedContactList = response.slice(0, 4);
+      // this.slicedContactList = response.slice(0, 4);
       this.spinnerService.hide();
     })
   }

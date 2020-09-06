@@ -33,10 +33,10 @@
         </div>
       </div>
 
-      <div infiniteScroll [infiniteScrollDistance]="scrollDistance" [infiniteScrollUpDistance]="scrollUpDistance"
-        [infiniteScrollThrottle]="scrollThrottle" [scrollWindow]="true" (scrolled)="onScrollDown()">
+      <!-- <div infiniteScroll [infiniteScrollDistance]="scrollDistance" [infiniteScrollThrottle]="scrollThrottle"
+        [scrollWindow]="true" (scrolled)="onScrollDown()"> -->
         <div fxLayout="row wrap">
-          <div *ngFor="let item of slicedContactList | searchFilter: search" fxFlex="33%">
+          <div *ngFor="let item of contactsList | searchFilter: search" fxFlex="33%">
             <div class="card">
               <div></div>
               <div><i class="fa fa-user-circle-o profile" aria-hidden="true"></i>
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
 
     </mat-card>
   </div>

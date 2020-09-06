@@ -1,0 +1,71 @@
+.details-card {
+  border-radius: 0;
+  margin-top: 2%;
+}
+
+.border {
+  border: 2px solid #f9d3b9;
+}
+
+.icon-div {
+  display: flex;
+  // align-items: center;
+}
+
+.divider {
+  width: 96% !important;
+  margin-left: 2%;
+}
+
+.company-details {
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.linkedinicon {
+  font-size: 24px;
+  color: #2877b5;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  font-family: system-ui;
+}
+
+.address {
+  display: block;
+  flex-direction: column;
+}
+
+.address div {
+  font-size: 14px;
+}
+
+.company-name {
+  margin: 0;
+}
+
+.rightborder {
+  border: 1px solid lightgray;
+  margin-top: 1%;
+}
+
+.social {
+  color: #2877b5;
+  margin: 0
+}
+
+.main-social {
+  margin-left: 2%;
+  display: block;
+  align-self: center;
+}
+.half-width{
+  width: 48%;
+}
+.form-div{
+  margin-top: 3%;
+}

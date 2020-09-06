@@ -1,0 +1,113 @@
+
+<div>
+  <div fxFlex=100 fxLayout="row" fxLayoutAlign="center center">
+    <mat-card fxFlex="center space-around" class="details-card" fxFlex=80>
+      <h4>IG Account Details</h4>
+      <div class="border"></div>
+      <div fxLayout="row" style="margin: 1% 0% 1% 0%">
+        <div class="icon-div" fxFlex="100">
+          <span class="material-icons">
+            account_balance_wallet
+          </span>
+          <h5 style="margin-left: 2%">Account Details</h5>
+        </div>
+        <div class="icon-div" fxLayoutGap="10px">
+          <button mat-stroked-button color="primary" disabled>Update</button>
+          <button mat-stroked-button color="primary">
+            <span class="material-icons">
+              feedback
+            </span>
+            Feedback</button>
+        </div>
+      </div>
+      <mat-divider class="divider"></mat-divider>
+
+      <div>
+        <div fxFlex="30" class="company-details">
+          <div fxFlex="20" class="logo">
+            ABB
+          </div>
+          <div fxFlex="60">
+            <div fxFlex="100" class="company-details">
+              <div class="address" fxFlex="100">
+                <h4 class="company-name">ABB Ltd</h4>
+                <div>Sample Address</div>
+              </div>
+              <i class="fa fa-linkedin-square linkedinicon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="rightborder"></div>
+        <div class="main-social" fxFlex="60">
+          <h5 class="social">Social abb</h5>
+          <h5 style="margin: 0">6543218990</h5>
+        </div>
+        <div class="company-details">
+          <button mat-raised-button color="primary" (click)="redirectTo()">Contacts</button>
+        </div>
+      </div>
+
+      <!-- Details Form -->
+      <div class="form-div">
+        <form [formGroup]="accountForm" (submit)="savedetails()" fxLayoutGap="20px">
+          <mat-form-field class="half-width">
+            <mat-label>Company Name</mat-label>
+            <input matInput formControlName="company_name">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>Primary Industry</mat-label>
+            <input matInput formControlName="primary_industry">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>Address</mat-label>
+            <input matInput formControlName="address">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>Revenue</mat-label>
+            <input matInput formControlName="revenue">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>Phone</mat-label>
+            <input matInput formControlName="phone_no">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>Employee Size</mat-label>
+            <input matInput formControlName="emp_size">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>Website</mat-label>
+            <input matInput formControlName="website">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>SJC</mat-label>
+            <input matInput formControlName="sjc">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>Ownership</mat-label>
+            <input matInput formControlName="ownership">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>NAJCS</mat-label>
+            <input matInput formControlName="najcs">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>Linkedin Url</mat-label>
+            <input matInput formControlName="linkedin_url">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>All Industry</mat-label>
+            <input matInput formControlName="all_industry">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>Parent Company</mat-label>
+            <input matInput formControlName="parent_company">
+          </mat-form-field>
+          <mat-form-field class="half-width">
+            <mat-label>All SJC</mat-label>
+            <input matInput formControlName="all_sjc">
+          </mat-form-field>
+        </form>
+      </div>
+    </mat-card>
+  </div>
+</div>

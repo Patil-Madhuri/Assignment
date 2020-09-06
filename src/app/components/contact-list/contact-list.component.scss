@@ -1,0 +1,50 @@
+.details-card {
+  border-radius: 0;
+  margin-top: 2%;
+}
+
+.border {
+  border: 2px solid #f9d3b9;
+}
+
+.icon-div {
+  display: flex;
+  // align-items: center;
+  margin-top: 1%;
+}
+
+.card {
+  border: 1px solid lightgray;
+  margin: 3%;
+  display: flex;
+  padding: 3%;
+  color: #212529c7;
+  line-height: 25px;
+  border-left: 10px solid #2877b5;
+}
+
+.profile {
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+i {
+  color: darkgray;
+  margin-right: 1%;
+}
+
+.fontsize {
+  font-size: 14px;
+}
+
+.linkedinicon {
+  font-size: 24px;
+  color: #2877b5;
+}
+
+.back {
+  width: 50%;
+  text-align: right;
+  color: blue;
+  cursor: pointer;
+}
